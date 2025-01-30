@@ -1,9 +1,11 @@
 // backend/src/server.js
-import express from 'express';
-import mongoose from 'mongoose';
-import cors from 'cors';
-import helmet from 'helmet';
-import dotenv from 'dotenv';
+const express = require('express');
+const mongoose = require('mongoose');
+const cors = require('cors');
+const helmet = require('helmet');
+const dotenv = require('dotenv');
+
+// Rest of your server code using CommonJS syntax
 
 dotenv.config();
 
