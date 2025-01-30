@@ -17,6 +17,12 @@ app.use(cors({
 }));
 app.use(express.json());
 
+// backend/src/server.js (add this after middleware setup)
+import projectRoutes from './routes/projectRoutes.js';
+
+// Routes
+app.use('/api/projects', projectRoutes);
+
 // Database connection
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log('Connected to MongoDB'))
